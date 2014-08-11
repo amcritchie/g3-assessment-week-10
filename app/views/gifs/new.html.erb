@@ -1,9 +1,13 @@
 <h1>Lets do this</h1>
 
-<%= form_for @gif do |f| %>
-<p>
-  <%= f.label :name %><br>
-  <%= f.text_field :name %>
-</p>
-  <%= f.submit "Creat Gif" %>
+<%= form_for @gifs do |f| %>
+    <p>
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label :url %><br>
+      <%= f.text_field :url %>
+    </p>
+    <%= f.submit "Create Gif" %>
 <% end %>
